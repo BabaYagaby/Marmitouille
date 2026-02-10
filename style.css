@@ -37,15 +37,16 @@ footer {
   list-style-type: none;
 }
 
-.article {
-    border: 1px solid black;
-    align-items: center;
-    justify-content: center;
+.articles p {
+    text-align: justify;
+    text-align-last: center;
 }
 
-.article img{
-    height: 30%;
-    width: 30%;
+.articles img {
+    border-radius: 15px;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
 }
 
 #logo {
