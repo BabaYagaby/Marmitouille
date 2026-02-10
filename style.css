@@ -36,3 +36,14 @@ footer {
   color: black;
   list-style-type: none;
 }
+
+.article {
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.article img{
+    height: 30%;
+    width: 30%;
+}
