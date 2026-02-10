@@ -28,3 +28,10 @@ html, body {
     background-color: rgb(255, 255, 255);
     color: rgb(255, 106, 20);
 }
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #abbaba;
+  color: black;
+}
