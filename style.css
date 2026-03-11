@@ -30,11 +30,14 @@ html, body {
 }
 
 footer {
-  text-align: center;
-  padding: 5px;
-  background-color: rgb(10, 10, 10);
-  color: rgb(255, 255, 255);
-  list-style-type: none;
+    width: stretch;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255);
+    list-style-type: none;
 }
 
 .articles p {
@@ -51,4 +54,14 @@ footer {
 
 #logo {
     height: 50px;
+}
+
+
+element.style {
+    justify-content: center;
+    display: grid;
+}
+
+button {
+    margin: 10px 0;
 }
