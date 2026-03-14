@@ -19,14 +19,12 @@ html, body {
     color: var(--black);
 }
 
-/* Navigation - keeping the flex layout and colors */
 #mainNav {
     display: flex;
     width: 100%;
     background-color: var(--primary-orange);
-    padding: 1rem 0;
-    justify-content: center;
-    gap: 1rem;
+    padding: 1rem 2rem 0 2rem;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -36,7 +34,7 @@ html, body {
     background-color: var(--secondary-orange);
     padding: 0.75rem 1.5rem;
     border-radius: 20px 20px 0 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     transition: all 0.3s ease;
     display: inline-block;
@@ -45,8 +43,6 @@ html, body {
 #mainNav a:hover {
     background-color: var(--white);
     color: var(--primary-orange);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer - fixed modern styling */
