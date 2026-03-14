@@ -1,70 +1,129 @@
+/* CSS Variables for colors to keep the soul */
+:root {
+    --primary-orange: rgb(255, 106, 20);
+    --secondary-orange: rgb(248, 134, 67);
+    --white: rgb(255, 255, 255);
+    --black: rgb(10, 10, 10);
+}
+
+/* Global reset and modern base */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--black);
 }
 
+/* Navigation - keeping the flex layout and colors */
 #mainNav {
     display: flex;
     width: 100%;
-    background-color: rgb(255, 106, 20);
-    padding-top: 3%;
-    justify-content: space-around;
+    background-color: var(--primary-orange);
+    padding: 1rem 0;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 #mainNav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
-    background-color: rgb(248, 134, 67);
-    margin: auto;
-    padding:2% 8%;
-    border-radius: 20px 20px 0 0 ;
-    font-size: xx-large;
+    background-color: var(--secondary-orange);
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px 20px 0 0;
+    font-size: 1.5rem;
     font-weight: bold;
-    transition: background-color ease 0.2s, color ease 0.2s;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
 #mainNav a:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 106, 20);
+    background-color: var(--white);
+    color: var(--primary-orange);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer - fixed modern styling */
 footer {
-    width: stretch;
-    bottom: 0;
+    width: 100%;
     position: fixed;
+    bottom: 0;
     text-align: center;
-    padding: 5px;
-    background-color: rgb(10, 10, 10);
-    color: rgb(255, 255, 255);
-    list-style-type: none;
+    padding: 0.5rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 0.9rem;
 }
 
+/* Articles section */
 .articles p {
     text-align: justify;
     text-align-last: center;
+    margin: 1rem 0;
 }
 
 .articles img {
     border-radius: 15px;
     object-fit: cover;
-    width: 75%;
+    width: min(75%, 400px);
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo */
 #logo {
     height: 50px;
+    width: auto;
 }
 
-
+/* Form - modern grid layout */
 form {
-    justify-content: center;
     display: grid;
+    justify-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 button {
-    margin: 10px 0;
+    margin: 0.5rem 0;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-orange);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-orange);
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #mainNav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainNav a {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .articles img {
+        width: 90%;
+    }
 }
