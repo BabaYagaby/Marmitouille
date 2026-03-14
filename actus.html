@@ -18,14 +18,72 @@
         </nav>
     </header>
 
-    <a href="index.html">Accueil</a>
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Actus Food</li>
+            </ol>
+        </nav>
 
-    <div class="container">
-        <p>voila voila voici des super actus food !</p>
+        <h1 class="mb-5 text-center">Quoi de neuf dans l'assiette ?</h1>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format" class="card-img-top" alt="Salade healthy">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Tendance</span>
+                        <h5 class="card-title">Le retour du "Slow Food"</h5>
+                        <p class="card-text">Pourquoi prendre le temps de cuisiner devient le nouveau luxe de 2026. On vous explique tout sur cette tendance.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&auto=format" class="card-img-top" alt="Street food">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Street Food</span>
+                        <h5 class="card-title">Les 5 meilleurs Food-Trucks</h5>
+                        <p class="card-text">Notre sélection des pépites roulantes à ne pas manquer ce mois-ci dans votre région. Papilles en fête garanties !</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Voir la liste</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500&auto=format" class="card-img-top" alt="Dessert chocolat">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Gourmandise</span>
+                        <h5 class="card-title">Chocolat : Le secret du moelleux</h5>
+                        <p class="card-text">Le Chef Pâtissier de Marmitouille nous révèle son ingrédient secret pour ne plus jamais rater son fondant.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Découvrir le secret</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light p-5 rounded mt-5 text-center">
+            <h3>Ne ratez aucune miette !</h3>
+            <p>Inscrivez-vous à notre newsletter pour recevoir les actus directement dans votre boîte mail.</p>
+            <div class="input-group mb-3 max-width-500 mx-auto" style="max-width: 500px;">
+                <input type="email" class="form-control" placeholder="Votre email" aria-label="Votre email">
+                <button class="btn btn-primary" type="button">S'abonner</button>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+    <footer class="mt-5 border-top pt-4">
+        <div class="container text-center">
+            <div class="social mb-3">
+                <a href="#" class="mx-2 text-decoration-none">Instagram</a>
+                <a href="#" class="mx-2 text-decoration-none">Snapchat</a>
+                <a href="#" class="mx-2 text-decoration-none">Twitter</a>
+                <a href="#" class="mx-2 text-decoration-none">Facebook</a>
+            </div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Home</a></li>
                 <li class="list-inline-item"><a href="#">Services</a></li>
@@ -33,9 +91,9 @@
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
             </ul>
-        <small>Copyright © 2026 Marmitouille.com Tous droits réservés</small>
+            <p><small class="text-muted">Copyright © 2026 Marmitouille.com Tous droits réservés</small></p>
+        </div>
     </footer>
-    
     
 </body>
 </html>
