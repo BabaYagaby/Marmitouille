@@ -17,7 +17,6 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--black);
-    padding-bottom: 120px; /* Pour éviter le chevauchement avec le footer fixe */
 }
 
 #mainNav {
@@ -49,13 +48,22 @@ html, body {
 /* Footer - fixed modern styling */
 footer {
     width: 100%;
-    /* position: fixed; */
-    bottom: 0;
+    position: static !important;
     text-align: center;
     padding: 0.5rem;
     background-color: var(--black);
     color: var(--white);
     font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--white);
+    text-decoration: none;
 }
 
 /* Articles section */
