@@ -138,3 +138,9 @@ button:hover {
         width: 90%;
     }
 }
+
+/* Reduce size of buttons in carousel */
+.carousel-caption .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
