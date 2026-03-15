@@ -17,6 +17,7 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--black);
+    padding-bottom: 120px; /* Pour éviter le chevauchement avec le footer fixe */
 }
 
 #mainNav {
