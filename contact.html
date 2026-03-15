@@ -24,31 +24,66 @@
         </a>
     </div>
 
-    <div class="container">
-    
-    <form action="" method="post">
-        <label for="mail">Adresse Mail :</label>
-        <input type="text" name="" id="mail">
-        <label for="objet">Objet</label>
-        <input type="text" name="" id="objet">
-        <label for="message">Message :</label>
-        <textarea name="" id="message"></textarea>
-        <button>Envoyer</button>
-    </form>
+    <section class="contact-banner">
+        <div class="banner-text">
+            <h1>Nous contacter</h1>
+            <p>Une question ? Une suggestion de recette ? Nous serions ravis de vous lire !</p>
+        </div>
+    </section>
+
+
+<div class="container contact-section">
+
+<h3 class="mb-4" style="border-left: solid 4px var(--primary-orange); padding-left: 10px;">Formulaire de contact :</h3>
+
+<div class="row g-4 align-items-stretch">
+
+    <div class="col-lg-7">
+
+        <form class="contact-form h-100 p-5">
+
+            <div class="mb-4">
+                <label for="mail" class="form-label">Adresse Mail :</label>
+                <input type="email" class="form-control form-control-lg" id="mail" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="objet" class="form-label">Objet :</label>
+                <input type="text" class="form-control form-control-lg" id="objet" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="message" class="form-label">Message :</label>
+                <textarea class="form-control form-control-lg" id="message" rows="8" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-warning w-100" id="btn-submit">Envoyer</button>
+
+        </form>
+    </div>
+
+
+    <div class="col-lg-4">
+
+        <div class="contact-image h-100">
+            <img src="images/illustration-nourriture2.webp" alt="Cuisine">
+        </div>
 
     </div>
 
-    <footer>
+</div>
+
+<footer style="margin-top: 120px;">
         <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Accueil</a></li>
+              <li class="list-inline-item"><a href="#">Accueil</a></li>
                 <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">À propos</a></li>
-                <li class="list-inline-item"><a href="#">Conditions</a></li>
-                <li class="list-inline-item"><a href="#">Politique de confidentialité</a></li>
+              <li class="list-inline-item"><a href="#">À propos</a></li>
+              <li class="list-inline-item"><a href="#">Conditions</a></li>
+              <li class="list-inline-item"><a href="#">Politique de confidentialité</a></li>
             </ul>
         <small>Copyright © 2026 Marmitouille.com Tous droits réservés</small>
-    </footer>
+</footer>
     
     
 </body>
