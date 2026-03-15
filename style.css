@@ -75,9 +75,15 @@ footer {
 }
 
 /* Logo */
+
 #logo {
     height: 50px;
     width: auto;
+}
+
+.logo-container{
+    text-align:center;
+    margin:3rem 0 3rem;
 }
 
 /* Form - modern grid layout */
