@@ -194,3 +194,8 @@ footer a:hover {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
 }
+
+#mainNav > a.active {
+    background-color: white;
+    color: var(--primary-orange); /* Optionnel : pour que le texte reste lisible sur fond blanc */
+}
