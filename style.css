@@ -63,10 +63,34 @@ footer a:hover {
     text-decoration: none;
 }
 
+#title {
+    text-align: center;
+    margin: 3rem 0 5rem;
+    font-size: 2.5rem;
+}
+
+#title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#title p {
+    max-width: 600px;
+    margin: 1rem auto 0;
+    font-size: 1rem;
+    color: rgb(100, 100, 100);
+}
+
 /* Articles */
 
 .articles {
     margin: 3rem;
+}
+
+.articles h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .articles img {
